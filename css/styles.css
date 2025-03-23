@@ -4,15 +4,18 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f0f0f0;
+    text-align: center; /* Center-align all text */
 }
 
 .container {
     max-width: 845px; /* (161px * 5) + (8px * 4) */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Center-align items horizontally */
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
@@ -22,6 +25,7 @@ h1 {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of items */
     margin-bottom: 8px;
+    justify-content: center; /* Center-align images horizontally */
 }
 
 .img-wrapper {
@@ -68,6 +72,7 @@ img:hover {
 @media (max-width: 320px) {
     .row {
         flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center-align images */
     }
     
     .img-wrapper {
