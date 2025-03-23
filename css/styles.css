@@ -64,8 +64,8 @@ img:hover {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Media Queries for Mobile Devices */
-@media (max-width: 600px) {
+/* Media Queries for Screens Smaller Than 320px */
+@media (max-width: 320px) {
     .row {
         flex-direction: column; /* Stack images vertically */
     }
